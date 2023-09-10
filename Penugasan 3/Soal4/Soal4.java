@@ -26,11 +26,14 @@ public class Soal4 {
             bonusPenjualan = hitungBonusPenjualan(25.0,totalPenjualan);
             gajiTotal = gajiPokok + bonusPenjualan;
             System.out.println(gajiTotal);
-        } else if (banyakItem < 15) {
+        } else if (banyakItem < 15 && banyakItem >=0) {
             denda = hitungBonusPenjualan(15.0,hargaItem);
             double kaliDenda = 15-banyakItem;
             gajiTotal = gajiPokok - (denda*kaliDenda);
             System.out.println(gajiTotal);
+        } else if(banyakItem < 0){
+            System.out.println("Tidak bisa input negatif!");
+            System.exit(-1);
         }else{
             bonusPenjualan = hitungBonusPenjualan(10.0,totalPenjualan);
             gajiTotal = gajiPokok + bonusPenjualan;
