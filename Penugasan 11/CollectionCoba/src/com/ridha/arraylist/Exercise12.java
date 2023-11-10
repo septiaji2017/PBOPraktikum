@@ -14,7 +14,6 @@ public class Exercise12 {
         list_Strings.add("Black");
         System.out.println("Original list: " + list_Strings);
         List<String> sub_List = list_Strings.subList(0, 3);
-        //sublist bukan range - dari 0 smpe 3, 3 nya tetap dihitung
         System.out.println("List of first three elements: " + sub_List);
     }
 }
