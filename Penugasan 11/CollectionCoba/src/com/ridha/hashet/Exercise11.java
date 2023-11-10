@@ -19,11 +19,7 @@ public class Exercise11 {
         h_set2.add("Orange");
         System.out.println("Second HashSet content: "+h_set2);
         h_set1.retainAll(h_set2);
-        //elemen di h_set1 akan hilang apabila tidak ada di h_set2
-        //h1 [red,white,black,green]
-        //h2 [red,pink,black,orange]
-        //hasil = h_set2
-        //elemen h_set1 akan dipertahankan apabila elemen" nya terdapat di h_set2.
+
         System.out.println("HashSet content:");
         System.out.println(h_set1);
     }
